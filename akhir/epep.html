@@ -1,0 +1,179 @@
+<html> 
+ <head> 
+    <link rel="stylesheet" href="epep.css">
+    <script src="epep.js"></script>
+  <title> 
+   Layanan Kami 
+  </title> 
+  <script src="https://cdn.tailwindcss.com"> 
+  </script> 
+  <link href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTZLWUAzdeJc4PlI6PLtLzuwP_6kNkGazrnQ&s"  rel="stylesheet"/> 
+ </head> 
+ <body class="bg-gray-100"> 
+  <header class="bg-gray-800 text-white"> 
+    <nav class="navbar">
+        <div class="logo">Layanan Kami</div>
+        <ul class="nav-links">
+            <li><a href="#contactForm">Kontak</a></li>
+            <li><a href="#Fitur">fitur</a></li>
+            <li><a href="#kerja">Cara kerja</a></li>
+            <li><a href="#Testimonils">Testimuni</a></li>
+            <li><a href="#Galeri">Galeri</a></li>
+            <li><a href="tugasweb.html" class="button">halaman2</a></li>
+        </ul>
+    </nav>
+   <div>
+  </header> 
+  <main class="relative"> 
+   <img alt="Dark office background with a desk and plants" class="w-full h-screen object-cover" height="1080" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTZLWUAzdeJc4PlI6PLtLzuwP_6kNkGazrnQ&s" width="1920"/> 
+   <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white"> 
+    <h1 class="text-5xl font-bold mb-4"> 
+     Selamat datang di 
+     <span class="text-orange-500"> 
+      Layanan Kami 
+     </span> 
+    </h1> 
+    <p class="text-lg mb-8"> 
+     Menyediakan solusi terbaik untuk kebutuhan bisnis Anda. 
+    </p> 
+    <a class="bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600" href="#contactForm"> 
+        Hubungi Kami 
+       </a> 
+   </div> 
+  </main> 
+  
+  <div class="container">
+    <h2>Kontak Kami</h2>
+    <form id="contactForm" class="contact-form">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="status">Status</label>
+        <select id="status" name="status">
+            <option value="Aktif">Aktif</option>
+            <option value="Tidak Aktif">Non-Aktif</option>
+            <option value="menunggu">menunggu</option>
+        </select>
+            <button type="button" onclick="addToTable()">Tambah ke Tabel</button>
+    </form>
+
+    <h2>Tabel Data</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+            <!-- Data akan ditambahkan di sini -->
+            <script>
+                let idCounter = 1;
+        
+                function addToTable() {
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const status = document.getElementById("status").value;
+        
+                    if (name && email) {
+                        const table = document.getElementById("dataTable");
+                        const newRow = document.createElement("tr");
+                        newRow.innerHTML = `
+                            <td>${idCounter++}</td>
+                            <td>${name}</td>
+                            <td>${email}</td>
+                            <td>${status}</td>
+                        `
+        
+                     
+                        const detailRow = document.createElement("tr");
+                        detailRow.className = "details";
+                        detailRow.innerHTML = `
+                            <td colspan="4">Detail tambahan untuk ${name}.</td>
+                        `;
+                        
+                      
+                        newRow.addEventListener("click", () => {
+                            detailRow.classList.toggle("show");
+                        });
+        
+                     
+                        table.appendChild(newRow);
+                        table.appendChild(detailRow);
+                        
+                      
+                        document.getElementById("contactForm").reset();
+                    }
+                }
+                </script>
+        </tbody>
+    </table>
+</div>
+
+    
+    <div class="section features">
+        <h2>Fitur Utama Kami</h2>
+        <form id="Fitur" class="#Fitur"></form>
+        <lu>
+            <li>Fitur 1: Layanan Berkualitas Tinggi</li>
+            <li>Fitur 2: Dukungan 24/7</li>
+            <li>Fitur 3: Solusi yang Dapat Disesuaikan</li>
+            <li>Fitur 4: Harga Terjangkau</li>
+        </lu>
+    </div>
+
+    <form id="kerja" class="#kerja"></form>
+    <div class="section workflow">
+        <h2>Cara Kerja</h2>
+        <ol>
+            <li>1.Langkah 1: Hubungi Kami</li>
+            <li>2.Langkah 2: Diskusikan Kebutuhan Anda</li>
+            <li>3.Langkah 3: Dapatkan Proposal Khusus</li>
+            <li>4.Langkah 4: Luncurkan Proyek Anda</li>
+        </ol>
+    </div>
+    <main>
+
+        <section
+        class="Testimonils" id="Testimonils"> 
+      <h2 >Apa Kata Klien Kami</h2> 
+       <div class="Testimonil1"> 
+         <p><i>*Pengalaman kami dengan Layanan ini sangat luar biasa Tim sangat profesional dan dapat diandalkan*</i></p> 
+         <p><i>-Alex Johnson</i></p> 
+       </div> 
+       
+      <div class="Testimonil2"> 
+       <p><i>*Mereka melebihi harapan kami segala hal Sabgat merekomendasikan layanan kami*</i></p> 
+       <p><i>-Sarah Wiliams</i></p> 
+       </div> 
+     </section> 
+     
+
+        <section class="galeri" id="Galeri">
+            <h2>Galeri Karya Kami</h2>
+            <div class="Gallary-images">
+                <div class="galeri-item">
+                    <img src="https://i.pinimg.com/474x/e9/a5/f7/e9a5f71534fab50ba09bcdd0677025fc.jpg" alt="Galeri 1">
+                </div>
+                <div class="galeri-item">
+                    <img src="https://i.pinimg.com/236x/7a/e5/c8/7ae5c823759e12e0b5a026d6b4e9ec2d.jpg" alt="Galeri 2">
+                </div>
+                <div class="galeri-item">
+                    <img src="https://i.pinimg.com/474x/0f/63/ed/0f63ede66e553abc352b71989c8cb7e1.jpg" alt="Galeri 3">
+                </div>
+                <div class="galeri-item">
+                    <img src="https://i.pinimg.com/236x/ed/fe/85/edfe85a4c8cd690665dced41006cc0f1.jpg" alt="Galeri 4">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+</div>
+ </body> 
+</html>

@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.navbar button {
+    background-color: rgb(255, 149, 11);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor:pointer;
+    margin:8px 0;
+    border-radius:15px;
+}
+.navbar button:hover {
+    background-color: rgb(197, 151, 0);
+}
+.a {
+    background-color: rgb(255, 149, 11);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor:pointer;
+    margin:8px 0;
+    border-radius:15px;
+}
+.button {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #ff7f50; 
+    color: white; 
+    text-align: center; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+.button:hover {
+    background-color: #ff6347; 
+}
+.container {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form select {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #ff7f00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff7f00;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+        .section {
+            padding-left: 20px;
+          text-align: auto;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #777777;
+        }
+
+        .features, .workflow {
+            margin-bottom: 40px;
+        }
+
+        .features ul, .workflow ol {
+            list-style-position: inside;
+            color: #555;
+            font-size: 18px;
+        }
+        .Testimonils { 
+            text-align: center; 
+            display: flex; 
+            margin-bottom: 2rem 0; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 2rem; 
+        } 
+         
+        .Testimonils h2{ 
+            margin-bottom: 1rem; 
+            color: rgb(255, 145, 2); 
+            font-size: 24px; 
+        } 
+         
+        .Testimonil1 { 
+        margin: 1rem; 
+        padding: 1rem; 
+        border-left: 4px solid orange; 
+        width: 40%; 
+        margin: auto; 
+        color: black; 
+        } 
+         
+        .Testimonil2 { 
+        margin: 1rem; 
+        padding: 1rem; 
+        border-left: 4px solid rgb(252, 166, 7); 
+        width: 40%; 
+        margin: auto; 
+        color: black; 
+        }
+        section.galeri {
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        
+        section.galeri h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .Gallary-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .galeri-item img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .galeri-item img:hover {
+            transform: scale(1.05);
+        }
+
+footer {
+  background-color: #333;
+  color: #ff5100;
+  padding: 1px;     
+}
